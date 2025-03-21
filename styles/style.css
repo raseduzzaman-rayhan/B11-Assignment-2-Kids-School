@@ -113,6 +113,112 @@
     margin-top: 24px;
 }
 
+/* Curriculam Section Styles */
+
+.curriculam-section {
+    background-image: url(../Images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 60px auto 0 auto;
+}
+
+.curriculam-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    max-width: 1160px;
+    margin: 0 auto;
+
+}
+
+.curriculam-container h1{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.curriculam-boxes {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 28px;
+}
+
+.bg-gradient-1{
+    background: linear-gradient(to bottom, #64C8FF66 -6%, #FFFFFF 28%);
+}   
+.bg-gradient-2{
+        background: linear-gradient(to bottom, #FFF4DC -6%, #FFFFFF 28%);
+}
+.bg-gradient-3{
+        background: linear-gradient(to bottom, #EEE1FF -6%, #FFFFFF 28%);
+    
+        
+}
+
+.curriculam-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+    /* width: 340px;
+    height: 420px; */
+    gap: 30px;
+    border-radius: 18px;
+    box-shadow: 0 0 19.16px 0.64px #0000000D;
+}
+
+.curriculam-box h3{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.curriculam-box p{
+    font-size: 1rem;
+    font-weight: medium;
+    text-align: center;
+}
+.curriculam-box span{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #64C8FF;
+}
+.curriculam-box:nth-child(2) span{
+    color: #F0AA00;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.curriculam-box:nth-child(3) span{
+    color: #8700FF;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+/* Less Greater Design */
+.less-greater{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.less, .greater {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEA301;
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+.less span, .greater span{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
 @media screen and (max-width: 576px){
     /* navbar for mobile device */
     .navbar {
@@ -122,8 +228,10 @@
         flex-wrap: wrap;
         padding: 10px;
     }
-    .nav-links,
-    .contact {
+    .nav-links, 
+    .logo h1, 
+    .contact,
+    .less-greater {
         display: none;
     }
     .hamburger {
@@ -131,13 +239,13 @@
         width: 30px;
         cursor: pointer;
     }
-
     /* Banner Section */
     .banner-contents {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .banner-title {
+    .banner-title,
+    .curriculam-container h1 {
         font-size: 2.2rem;
     }
     .banner-description {
@@ -153,6 +261,21 @@
         max-width: 350px;
         margin: 20px auto;
     }
+
+    /* Curriculam Section Style */
+    .curriculam-boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .curriculam-box {
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
     
 
 
