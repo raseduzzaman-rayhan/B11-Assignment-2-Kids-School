@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* Shared Style */
 .orange {
     color: #FEA301;
@@ -224,10 +225,8 @@
     background-image: url(../Images/bg.png),
     linear-gradient(0deg, 
     rgba(254, 163, 1, 0.3),
-    rgba(255, 255, 255, 0.3) 
-    110%);
+    rgba(255, 255, 255, 0.3));
     background-repeat: no-repeat;
-    background-size: 100%;
     background-position: center;
     margin: 80px auto 0 auto;
 }
@@ -336,6 +335,55 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* footer section style */
+.footer {
+    background-color: #01ACFD;
+    color: #FFFFFF;
+}
+.footer-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -20px;
+    padding: 65px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-items p{
+    max-width: 400px;
+    height: 100%;
+}
+.logo-name {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.logo-name h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.logo-name img {
+    width: 80px;
+    height: 100%;
+}
+.about-school ul {
+    list-style: none;
+    padding: 0;
+}
+.about-school ul li {
+    margin: 5px 0;
+}
+.about-school ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 576px){
     /* navbar for mobile device */
     .navbar {
@@ -393,7 +441,6 @@
         padding: 20px;
         text-align: center;
     }
-
     /* Stories Section */
     .stories-title {
         font-size: 2rem;
@@ -406,7 +453,6 @@
         max-width: 320px;
         padding: 20px;
     }
-    
     .small-box {
         max-width: 220px;
         height: 250px;
@@ -414,7 +460,6 @@
         gap: 2px;
         text-align: left;
     }
-    
     .small-box img {
         width: 100%;
         height: auto;
@@ -433,5 +478,13 @@
     #main-btn-1 {
         display: block;
         margin-left: calc(( 100% / 2 ) - 35px);
+    }
+
+    /* footer section */
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 30px;
     }
 }
