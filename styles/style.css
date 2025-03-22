@@ -103,6 +103,15 @@
     color: black;
     margin-top: 24px;
 }
+.marquee{
+    max-width: 600px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 30px auto;
+}
+.nelson{
+    color: #FEA301;
+}
 .main-btn {
     background-color: black;
     color: #FFFFFF;
@@ -486,5 +495,8 @@
         flex-direction: column;
         gap: 20px;
         padding-left: 30px;
+    }
+    .marquee {
+        display: none;
     }
 }
